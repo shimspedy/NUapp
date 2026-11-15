@@ -1,7 +1,8 @@
 <resources>
-    <!-- Light theme with an action bar so the app name shows at the top. -->
+    <!-- Light theme with an action bar so each screen's title shows at the top. -->
     <style name="Theme.HelloWorld" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Dark status-bar icons so the clock and battery stay readable on a light background. -->
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
     </style>
 </resources>

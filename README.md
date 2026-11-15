@@ -1,6 +1,8 @@
 # NUapp
 
-Assignment 1: Hello World Android app (Java). It shows "Hello World!" centered on the screen.
+Assignment 1b: SendToScreen Android app (Java). The main screen has a message box and a
+Send button; clicking Send opens Message Activity, which shows the message in a TextView.
+All strings are available in English and French (`values-fr`).
 
 - Package: `edu.nu.helloworld`
 - compileSdk / targetSdk 35, minSdk 24
@@ -14,4 +16,6 @@ Open the project in Android Studio and click Run, or:
 ./gradlew installDebug
 ```
 
-![App output](screenshots/app_output.png)
+| English | French |
+| --- | --- |
+| ![Message in English](screenshots/3_message_en.png) | ![Message in French](screenshots/6_message_fr.png) |

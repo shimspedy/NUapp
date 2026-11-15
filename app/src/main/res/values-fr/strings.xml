@@ -1,0 +1,9 @@
+<resources>
+    <!-- French strings, used when the device or app language is French. -->
+    <string name="app_name">Ma première application</string>
+    <string name="title_message_activity">Activité de message</string>
+    <string name="hint_message">Entrer un message</string>
+    <string name="button_send">Bouton d\'envoi</string>
+    <string name="button_back">Retour à la page principale</string>
+    <string name="error_empty_message">Veuillez entrer un message</string>
+</resources>

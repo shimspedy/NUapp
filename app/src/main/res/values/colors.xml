@@ -1,0 +1,9 @@
+<resources>
+    <!-- App bar and accent colors. -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <!-- Screen backgrounds and the Back button, matching the assignment examples. -->
+    <color name="main_background">#C9D9E6</color>
+    <color name="message_background">#D3C0A8</color>
+    <color name="back_button">#6AA121</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <!--
+        Android 15 (API 35) draws apps edge to edge by default, which puts the
+        layout behind the action bar. Opting out keeps content below the bar.
+    -->
+    <style name="Theme.HelloWorld" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

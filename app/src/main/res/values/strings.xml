@@ -1,6 +1,9 @@
 <resources>
-    <!-- App name shown in the launcher and the app bar. -->
-    <string name="app_name">HelloWorld</string>
-    <!-- Message displayed on the main screen. -->
-    <string name="hello_world">Hello World!</string>
+    <!-- Default (English) strings. French versions are in values-fr/strings.xml. -->
+    <string name="app_name">My First Application</string>
+    <string name="title_message_activity">Message Activity</string>
+    <string name="hint_message">Enter Message</string>
+    <string name="button_send">Send Button</string>
+    <string name="button_back">Back to Main</string>
+    <string name="error_empty_message">Please enter a message</string>
 </resources>
