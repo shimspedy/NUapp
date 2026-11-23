@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml
+    Declares the app's two activities. MainActivity is the launcher screen where
+    the user types a message; MessageActivity displays that message.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloWorld">
+
+        <!-- Entry point: shown in the app drawer and started first. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Only started from inside the app, so it is not exported. -->
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false"
+            android:label="@string/title_message_activity"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

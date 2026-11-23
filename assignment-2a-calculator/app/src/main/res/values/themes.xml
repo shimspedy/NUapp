@@ -1,0 +1,8 @@
+<resources>
+    <!-- Light theme with an action bar so each screen's title shows at the top. -->
+    <style name="Theme.HelloWorld" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+</resources>

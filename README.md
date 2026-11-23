@@ -1,23 +1,20 @@
 # NUapp
 
-Assignment 2a: a tiny calculator Android app (Java). The screen has two number boxes and four
-buttons. Type two numbers, press `+`, `-`, `x` or `/`, and the answer appears below the buttons.
-An empty box or a division by zero shows a message instead of an answer.
-Labels and error messages are available in English and French (`values-fr`).
+My Android (Java) assignments. Each assignment is its own Android Studio project in its own
+folder.
 
-- Package: `edu.nu.helloworld`
-- compileSdk / targetSdk 35, minSdk 24
-- Android Gradle Plugin 8.13.2, Gradle 8.13
-- Java code follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+| Assignment | Folder | What it does |
+| --- | --- | --- |
+| 1a: Hello World | [assignment-1a-hello-world](assignment-1a-hello-world) | Shows "Hello World!" in the middle of the screen. |
+| 1b: SendToScreen | [assignment-1b-send-to-screen](assignment-1b-send-to-screen) | Type a message, press Send, and a second screen shows it. English and French. |
+| 2a: Calculator | [assignment-2a-calculator](assignment-2a-calculator) | Type two numbers and press `+`, `-`, `x` or `/` to see the answer. |
 
-## Run
+## Run an assignment
 
-Open the project in Android Studio and click Run, or:
+Open the assignment's folder in Android Studio and click Run, or from inside that folder:
 
 ```
 ./gradlew installDebug
 ```
 
-| Add | Divide | Divide by zero |
-| --- | --- | --- |
-| ![16.5 + 10.0 = 26.5](screenshots/1_add.png) | ![16.5 / 10.0 = 1.65](screenshots/4_divide.png) | ![Error shown when dividing by zero](screenshots/5_divide_by_zero.png) |
+The Java code follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
