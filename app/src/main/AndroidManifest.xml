@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     AndroidManifest.xml
-    Declares the app's two activities. MainActivity is the launcher screen where
-    the user types a message; MessageActivity displays that message.
+    Declares the app's single activity. MainActivity is the launcher screen and
+    holds the whole calculator.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -23,13 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Only started from inside the app, so it is not exported. -->
-        <activity
-            android:name=".MessageActivity"
-            android:exported="false"
-            android:label="@string/title_message_activity"
-            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

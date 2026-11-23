@@ -1,30 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Layout for MainActivity: a message box and a Send button in one row. -->
+<!--
+    Layout for MainActivity: two number boxes with the operator between them,
+    a row of four operation buttons, and the answer underneath.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background"
-    android:orientation="horizontal"
-    android:padding="8dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="32dp"
     tools:context=".MainActivity">
 
-    <!-- Takes the remaining width so the button keeps its natural size. -->
-    <EditText
-        android:id="@+id/edit_message"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:autofillHints=""
-        android:hint="@string/hint_message"
-        android:inputType="text"
-        android:minHeight="48dp" />
-
-    <Button
-        android:id="@+id/button_send"
+    <!-- The two numbers. The operator between them is filled in from code. -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="@string/button_send" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_first_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="5"
+            android:gravity="center"
+            android:hint="@string/hint_number"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLength="12"
+            android:minHeight="48dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text_operator"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:gravity="center"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="22sp"
+            tools:text="+" />
+
+        <EditText
+            android:id="@+id/edit_second_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="5"
+            android:gravity="center"
+            android:hint="@string/hint_number"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLength="12"
+            android:minHeight="48dp"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <!-- The four operation buttons share the row width equally. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_add"
+            android:text="@string/button_add"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_subtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_subtract"
+            android:text="@string/button_subtract"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_multiply"
+            android:text="@string/button_multiply"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_divide"
+            android:text="@string/button_divide"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Filled in from code with the answer. Kept across screen rotation. -->
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textIsSelectable="true"
+        android:textSize="22sp"
+        tools:text="26.5" />
 
 </LinearLayout>

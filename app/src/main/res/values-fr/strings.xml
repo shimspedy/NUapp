@@ -1,9 +1,11 @@
 <resources>
     <!-- French strings, used when the device or app language is French. -->
-    <string name="app_name">Ma première application</string>
-    <string name="title_message_activity">Activité de message</string>
-    <string name="hint_message">Entrer un message</string>
-    <string name="button_send">Bouton d\'envoi</string>
-    <string name="button_back">Retour à la page principale</string>
-    <string name="error_empty_message">Veuillez entrer un message</string>
+    <string name="app_name">Calculatrice NU</string>
+    <string name="hint_number">Nombre</string>
+    <string name="description_add">Additionner</string>
+    <string name="description_subtract">Soustraire</string>
+    <string name="description_multiply">Multiplier</string>
+    <string name="description_divide">Diviser</string>
+    <string name="error_invalid_number">Veuillez entrer deux nombres</string>
+    <string name="error_divide_by_zero">Division par zéro impossible</string>
 </resources>
