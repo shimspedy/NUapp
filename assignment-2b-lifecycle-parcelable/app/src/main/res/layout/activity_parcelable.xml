@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:orientation="vertical"
+    tools:context=".ParcelableActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="invokeDisplayMessageActivity"
+        android:text="@string/send_button" />
+
+    <TextView
+        android:id="@+id/messageTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:textSize="14sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/messageTextArea"
+        android:layout_margin="5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toMian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="toFirstScreen"
+            android:text="@string/to_first_screen" />
+
+        <Button
+            android:id="@+id/cleanMain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="cleanMainDisplay"
+            android:text="@string/clean_main" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/cleanMain"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/lightgold"
+            android:onClick="exitAppParcelable"
+            android:text="@string/closeButton" />
+    </LinearLayout>
+</LinearLayout>

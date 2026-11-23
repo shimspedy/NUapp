@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chapter 5</string>
+    <string name="insert_message"> Enter Message </string>
+    <string name="send_button"> Click Button </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="extramessage">code.android.abdulrahman.com.LifeCycleapplication.MESSAGE</string>
+    <string name="appmessage">code.android.abdulrahman.com.LifeCycleapplication.MESSAGE</string>
+    <string name="nodata">No data from intent</string>
+    <string name="clean">Clean</string>
+    <string name="close">Close</string>
+    <string name="back_to_main">Back to Main</string>
+    <string name="textview">TextView</string>
+    <string name="life_cycle_domonstration">2. Life Cycle Domonstration</string>
+    <string name="understanding_oncreate">1. Understanding onCreate()</string>
+    <string name="parcellable_domonstration">3. Parcellable Domonstration</string>
+    <string name="back_to_parcellable">Back to Parcelable Activity </string>
+    <string name="restore_domonstration">4. Restoring Activit Demonstration</string>
+    <string name="error_message">try again with inserting proper values</string>
+
+    <string name="name">Name</string>
+    <string name="age">age</string>
+    <string name="submit">submit</string>
+    <string name="course">course</string>
+    <string name="address">address</string>
+    <string name="to_first_screen">to first screen</string>
+    <string name="clean_main">clean_main</string>
+    <string name="closeButton">close</string>
+</resources>

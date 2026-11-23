@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Chapter 5</string>
+    <string name="insert_message"> Enter Message </string>
+    <string name="send_button"> Start Message Dipslay Activity </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="extramessage">code.android.abdulrahman.com.LifeCycleapplication.MESSAGE</string>
+    <string name="appmessage">code.android.abdulrahman.com.LifeCycleapplication.MESSAGE</string>
+    <string name="nodata">No data from intent</string>
+    <string name="clean">Clean</string>
+    <string name="close">Close</string>
+    <string name="back_to_main">Back to Main Activity </string>
+    <string name="back_to_parcellable">Back to Parcelable Activity </string>
+
+    <string name="life_cycle_domonstration">2. Life Cycle Demonstration</string>
+    <string name="understanding_oncreate">1. Understanding onCreate()</string>
+    <string name="parcellable_domonstration">3. Parcelable Demonstration</string>
+    <string name="restore_domonstration">4. Restoring Activity </string>
+
+    <string name="name">Name</string>
+    <string name="age">age</string>
+    <string name="textview">TextView</string>
+    <string name="submit">submit</string>
+    <string name="course">course</string>
+    <string name="address">address</string>
+    <string name="to_first_screen">Back To Main Menu</string>
+    <string name="clean_main">Clear screen</string>
+    <string name="closeButton">Close</string>
+    <string name="error_message">try again with inserting proper values</string>
+
+</resources>
+

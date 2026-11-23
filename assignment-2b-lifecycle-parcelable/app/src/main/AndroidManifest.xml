@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml
+    Lists every activity (screen) in the app. Android can only start an
+    activity that is declared here.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="code.android.abdulrahman.com.lifecyleapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Button 4: the restoring activity example. -->
+        <activity android:name=".RestoringActivity" />
+
+        <!-- Button 3: the two screens of the Parcelable example. -->
+        <activity android:name=".ParcelableDisplayMessageActivity" />
+        <activity android:name=".ParcelableActivity" />
+
+        <!-- The first screen. The intent filter makes it the one that opens with the app. -->
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Button 2: the two screens of the life cycle example. -->
+        <activity android:name=".DisplayMessageActivity" />
+        <activity android:name=".MainActivity" />
+
+        <!-- Button 1: the "Understanding onCreate()" example. -->
+        <activity
+            android:name=".UnderstandOnCreateActivity"
+            android:parentActivityName=".MenuActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="MenuActivity" />
+    </application>
+
+</manifest>
